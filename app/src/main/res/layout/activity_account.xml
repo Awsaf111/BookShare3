@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/fullnameValueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/BookTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullnameValueTextView"
+        android:layout_marginTop="65dp"
+        android:text="Book"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/BookValueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BookTextView"
+        android:hint="Book Name"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#454545"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BookValueTextView"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ShareBtn"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:text="Add"
+            android:textSize="15sp"
+
+            />
+
+        <Button
+            android:id="@+id/RemoveBtn"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:text="Remove"
+            android:textSize="15sp"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SearchBtn"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:text="Search"
+        android:textSize="15sp"
+
+        />
+
+    <Button
+        android:id="@+id/ShelfBtn"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:text="My Shelf"
+        android:textSize="15sp"
+
+        />
+
+
+</LinearLayout>
