@@ -141,7 +141,6 @@ public class Register extends AppCompatActivity {
                                 }
                             });
 
-                            //startActivity(new Intent(getApplicationContext(),MainActivity.class));
                             Intent intent = new Intent(getApplicationContext(), Account.class);
                             intent.putExtra("userId", userid);
                             startActivity(intent);

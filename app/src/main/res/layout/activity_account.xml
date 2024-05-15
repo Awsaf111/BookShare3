@@ -36,17 +36,12 @@
         android:textColorHint="#454545"
         android:textSize="20sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/BookValueTextView"
-        android:orientation="horizontal">
 
         <Button
             android:id="@+id/ShareBtn"
-            android:layout_width="120dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="10dp"
             android:padding="10dp"
@@ -57,9 +52,9 @@
 
         <Button
             android:id="@+id/RemoveBtn"
-            android:layout_width="120dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="10dp"
             android:padding="10dp"
@@ -68,13 +63,11 @@
 
             />
 
-    </LinearLayout>
-
     <Button
         android:id="@+id/SearchBtn"
-        android:layout_width="120dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="105dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="10dp"
         android:padding="10dp"
@@ -85,10 +78,10 @@
 
     <Button
         android:id="@+id/ShelfBtn"
-        android:layout_width="160dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="38dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="10dp"
         android:padding="10dp"
         android:text="My Shelf"

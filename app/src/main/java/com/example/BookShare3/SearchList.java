@@ -51,8 +51,6 @@ public class SearchList extends AppCompatActivity {
         CollectionReference collectionRef = fstore.collection("/user");
         Query query = collectionRef.whereArrayContains("book", bookName);
 
-       // CollectionReference subcollectionRef = fstore.collection("/user").document("userId").collection("book");
-        //DocumentReference docRef = fstore.collection("/user").document(userId);
 
         query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override

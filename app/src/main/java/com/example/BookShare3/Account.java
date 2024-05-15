@@ -45,13 +45,10 @@ public class Account extends AppCompatActivity {
         nRemoveBtn = findViewById(R.id.RemoveBtn);
         nSearchBtn = findViewById(R.id.SearchBtn);
 
-        //List<String> values = new ArrayList<>();
-
 
         String userId = getIntent().getStringExtra("userId");
         FirebaseFirestore fstore;
         fstore = FirebaseFirestore.getInstance();
-        CollectionReference subcollectionRef = fstore.collection("/user").document("userId").collection("book");
         DocumentReference docRef = fstore.collection("/user").document(userId);
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -59,10 +56,6 @@ public class Account extends AppCompatActivity {
                 if (documentSnapshot.exists()) {
                     String fullName = documentSnapshot.getString("fname");
 
-                    //String[] aauthor,agenre,abook;
-
-                    // Set the values to the TextViews or other UI components
-                    // in the ProfileActivity
                     TextView fullNameTextView = findViewById(R.id.fullnameValueTextView);
                     fullNameTextView.setText(fullName);
 

@@ -39,7 +39,6 @@ public class ItemList extends AppCompatActivity {
         String userId = getIntent().getStringExtra("userId");
         FirebaseFirestore fstore;
         fstore = FirebaseFirestore.getInstance();
-        CollectionReference subcollectionRef = fstore.collection("/user").document("userId").collection("book");
         DocumentReference docRef = fstore.collection("/user").document(userId);
 
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -69,7 +68,6 @@ public class ItemList extends AppCompatActivity {
             this.itemList = itemList;
         }
 
-        @NonNull
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
             android.view.View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items, parent, false);
